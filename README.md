@@ -1,6 +1,6 @@
 # Forms Pro Demo Skeleton
 
-The `user/` folder behind the [Forms Pro demo](https://demo.getgrav.org/forms-pro/): contact, job application, quote, booking, feedback and spam protection forms, every Pro field, five live calculators and a read-only Admin Next to explore. It is built for [Forms Pro](https://getgrav.org/premium/forms-pro), the drag-and-drop form builder for Grav 2, on the Quark 2 theme.
+The `user/` folder behind the [Forms Pro demo](https://demo.getgrav.org/forms-pro/): contact, job application, quote, booking, feedback and spam protection forms, every Pro field, five live calculators and a read-only Admin2 to explore. It is built for [Forms Pro](https://getgrav.org/premium/forms-pro), the drag-and-drop form builder for Grav 2, on the Quark 2 theme.
 
 ![](screenshot.jpg)
 

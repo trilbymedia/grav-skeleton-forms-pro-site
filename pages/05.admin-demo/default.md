@@ -8,7 +8,7 @@ process:
 
 # Look inside the builder
 
-Every form on this site is open in **Admin Next**, Grav 2's admin. Sign in with the demo account and look around. It is read-only: you can open, drag, edit and undo as much as you like, but saving is refused and nothing on the site changes.
+Every form on this site is open in **Admin2**, Grav 2's admin. Sign in with the demo account and look around. It is read-only: you can open, drag, edit and undo as much as you like, but saving is refused and nothing on the site changes.
 
 - **Sign in at:** [/admin](/admin)
 - **Username:** `demo`

@@ -5,7 +5,7 @@ author:
   email: 'demo@example.com'
 taxonomies: [category, tag]
 metadata:
-  description: 'Live demos of Forms Pro, the drag-and-drop form builder for Grav 2: multi-step forms, conditional logic, repeaters, live calculators, spam protection and a read-only Admin Next to explore.'
+  description: 'Live demos of Forms Pro, the drag-and-drop form builder for Grav 2: multi-step forms, conditional logic, repeaters, live calculators, spam protection and a read-only Admin2 to explore.'
 summary:
   enabled: true
   format: short
