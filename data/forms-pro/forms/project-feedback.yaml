@@ -1,0 +1,83 @@
+title: 'How did your project go?'
+type: forms-pro
+inline_errors: true
+fields:
+  steps:
+    type: pro-steps
+    progress: tabs
+    show_step_numbers: true
+    fields:
+      tab_overall:
+        type: pro-step
+        title: Overall
+        description: 'Two quick numbers first.'
+        fields:
+          honeypot:
+            type: honeypot
+          overall:
+            type: pro-rating
+            label: 'How happy are you with the result?'
+            max: 5
+            icon: star
+            allow_half: true
+            show_value: true
+          recommend:
+            type: pro-slider
+            label: 'How likely are you to recommend us to a friend?'
+            min: 0
+            max: 10
+            step: 1
+            default: 8
+            suffix: ' / 10'
+            show_labels: false
+      tab_details:
+        type: pro-step
+        title: Details
+        description: 'What worked, and what we should do better.'
+        fields:
+          went_well:
+            type: checkboxes
+            label: 'What went well?'
+            options:
+              communication: Communication
+              design: Design
+              speed: 'Speed of delivery'
+              quality: 'Code quality'
+              support: 'Support after launch'
+          improve:
+            type: textarea
+            label: 'What should we improve?'
+            rows: 4
+      tab_you:
+        type: pro-step
+        title: 'About you'
+        description: 'All optional.'
+        fields:
+          quote_ok:
+            type: toggle
+            label: 'Can we quote you on our website?'
+            highlight: 1
+            default: 0
+            options:
+              1: 'Yes'
+              0: 'No'
+          quote_name:
+            type: text
+            label: 'Name to show with the quote'
+            placeholder: 'Maya, Harbour Coffee'
+            conditions:
+              - action: show
+                rules:
+                  - field: quote_ok
+                    operator: is
+                    value: '1'
+          email:
+            type: email
+            label: 'Email, if you would like a reply'
+            placeholder: you@example.com
+buttons:
+  - type: submit
+    value: 'Send feedback'
+process:
+  - message: 'Thank you for the feedback! This is a demo, so it was not stored anywhere.'
+  - reset: true

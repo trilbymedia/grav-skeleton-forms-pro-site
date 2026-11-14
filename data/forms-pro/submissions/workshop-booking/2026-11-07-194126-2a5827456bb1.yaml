@@ -1,0 +1,36 @@
+data:
+  workshop: flatfile
+  session_date: may14
+  ticket: '149'
+  seats: 2
+  total: 298.0
+  attendees:
+    -
+      attendee_name: 'Sam Rivera'
+      attendee_email: sam@example.com
+      dietary: vegetarian
+    -
+      attendee_name: 'Alex Kim'
+      attendee_email: alex@example.com
+      dietary: none
+  billing_name:
+    first: Sam
+    last: Rivera
+  billing_email: sam@example.com
+  company: 'Rivera Studio'
+  billing_address:
+    street: '77 Mission Street'
+    street2: 'Suite 300'
+    city: 'San Francisco'
+    state: CA
+    zip: '94105'
+    country: 'United States'
+files: {  }
+id: 2a5827456bb1
+form: workshop-booking
+created: 1794080486
+status: read
+starred: false
+notes: ''
+ip: null
+user_agent: null

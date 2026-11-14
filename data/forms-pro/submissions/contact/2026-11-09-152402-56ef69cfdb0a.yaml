@@ -1,0 +1,16 @@
+data:
+  full_name:
+    first: Hiroshi
+    last: Tanaka
+  email: h.tanaka@example.com
+  department: press
+  message: 'We are putting together a talk on flat-file CMSs and would like to mention one of your case studies. Is that OK?'
+files: {  }
+id: 56ef69cfdb0a
+form: contact
+created: 1794237842
+status: read
+starred: false
+notes: ''
+ip: null
+user_agent: null

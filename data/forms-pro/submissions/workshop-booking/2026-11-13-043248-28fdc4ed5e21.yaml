@@ -1,0 +1,32 @@
+data:
+  workshop: forms
+  session_date: apr09
+  ticket: '89'
+  seats: 1
+  total: 89.0
+  attendees:
+    -
+      attendee_name: 'Priya Raman'
+      attendee_email: priya@example.com
+      dietary: vegetarian
+  billing_name:
+    first: Priya
+    last: Raman
+  billing_email: priya@example.com
+  company: ''
+  billing_address:
+    street: '8 Canal Street'
+    street2: 'Flat 4'
+    city: Manchester
+    state: ''
+    zip: 'M1 3HE'
+    country: 'United Kingdom'
+files: {  }
+id: 28fdc4ed5e21
+form: workshop-booking
+created: 1794544368
+status: new
+starred: false
+notes: ''
+ip: null
+user_agent: null

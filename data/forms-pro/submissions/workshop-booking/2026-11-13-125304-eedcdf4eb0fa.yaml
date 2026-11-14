@@ -1,0 +1,48 @@
+data:
+  workshop: flatfile
+  session_date: mar12
+  ticket: '149'
+  seats: 5
+  total: 670.5
+  attendees:
+    -
+      attendee_name: 'Ama Mensah'
+      attendee_email: ama@example.com
+      dietary: vegetarian
+    -
+      attendee_name: 'Luis Ortega'
+      attendee_email: luis@example.com
+      dietary: none
+    -
+      attendee_name: 'Hannah Becker'
+      attendee_email: hannah@example.com
+      dietary: vegan
+    -
+      attendee_name: 'Jon Park'
+      attendee_email: jon.park@example.com
+      dietary: none
+    -
+      attendee_name: 'Fatima Zahra'
+      attendee_email: fatima@example.com
+      dietary: gluten_free
+  billing_name:
+    first: Ama
+    last: Mensah
+  billing_email: accounts@mensah-design.example.com
+  company: 'Mensah Design'
+  billing_address:
+    street: '12 Harbour Lane'
+    street2: ''
+    city: Bristol
+    state: ''
+    zip: 'BS1 4RN'
+    country: 'United Kingdom'
+files: {  }
+id: eedcdf4eb0fa
+form: workshop-booking
+created: 1794574384
+status: new
+starred: true
+notes: 'Group of five: 10% discount applied.'
+ip: null
+user_agent: null

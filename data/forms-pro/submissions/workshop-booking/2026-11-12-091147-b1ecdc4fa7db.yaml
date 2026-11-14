@@ -1,0 +1,36 @@
+data:
+  workshop: a11y
+  session_date: may14
+  ticket: '149'
+  seats: 2
+  total: 298.0
+  attendees:
+    -
+      attendee_name: 'Noah Williams'
+      attendee_email: noah@example.com
+      dietary: none
+    -
+      attendee_name: 'Zara Ahmed'
+      attendee_email: zara@example.com
+      dietary: none
+  billing_name:
+    first: Noah
+    last: Williams
+  billing_email: finance@brightpath.example.com
+  company: 'Brightpath Learning'
+  billing_address:
+    street: '200 King Street'
+    street2: ''
+    city: Toronto
+    state: 'ON'
+    zip: 'M5H 1J9'
+    country: Canada
+files: {  }
+id: b1ecdc4fa7db
+form: workshop-booking
+created: 1794474707
+status: read
+starred: false
+notes: ''
+ip: null
+user_agent: null

@@ -1,0 +1,52 @@
+data:
+  workshop: forms
+  session_date: apr09
+  ticket: '149'
+  seats: 6
+  total: 804.6
+  attendees:
+    -
+      attendee_name: 'Nadia Petrova'
+      attendee_email: nadia@example.com
+      dietary: none
+    -
+      attendee_name: 'Omar Haddad'
+      attendee_email: omar@example.com
+      dietary: none
+    -
+      attendee_name: 'Lea Fischer'
+      attendee_email: lea@example.com
+      dietary: vegetarian
+    -
+      attendee_name: 'Tom Evans'
+      attendee_email: tom@example.com
+      dietary: none
+    -
+      attendee_name: 'Ines Garcia'
+      attendee_email: ines@example.com
+      dietary: vegan
+    -
+      attendee_name: 'Kai Müller'
+      attendee_email: kai@example.com
+      dietary: none
+  billing_name:
+    first: Nadia
+    last: Petrova
+  billing_email: billing@northline.example.com
+  company: 'Northline Agency'
+  billing_address:
+    street: 'Friedrichstrasse 68'
+    street2: ''
+    city: Berlin
+    state: ''
+    zip: '10117'
+    country: Germany
+files: {  }
+id: 141fd46e2d36
+form: workshop-booking
+created: 1793828315
+status: read
+starred: false
+notes: 'Six seats, discount applied.'
+ip: null
+user_agent: null

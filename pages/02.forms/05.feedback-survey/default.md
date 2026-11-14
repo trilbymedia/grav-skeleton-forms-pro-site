@@ -1,0 +1,111 @@
+---
+title: 'Feedback survey with tabs'
+menu: 'Survey with tabs'
+process:
+  markdown: true
+  twig: false
+---
+
+# Feedback survey with tabs
+
+The same multi-step engine as the [job application](/forms/job-application), with the **tabs** progress style. It adds a star rating that takes half stars, a 0 to 10 slider and a toggle that reveals one more question.
+
+**Try this:**
+
+- Click the tabs to move between the three parts, or use **Next** and **Previous**.
+- Click between two stars for a half rating.
+- On the last tab, switch on *Can we quote you on our website?* and a name field appears.
+
+[forms-pro name="project-feedback" /]
+
+## How it's built
+
+Changing `progress: tabs` to `bar` or `steps` is all it takes to switch styles.
+
+<details class="demo-yaml">
+<summary>Show the YAML <code>project-feedback.yaml</code></summary>
+<pre><code class="language-yaml"># user/data/forms-pro/forms/project-feedback.yaml
+title: 'How did your project go?'
+type: forms-pro
+inline_errors: true
+fields:
+  steps:
+    type: pro-steps
+    progress: tabs
+    show_step_numbers: true
+    fields:
+      tab_overall:
+        type: pro-step
+        title: Overall
+        description: 'Two quick numbers first.'
+        fields:
+          honeypot:
+            type: honeypot
+          overall:
+            type: pro-rating
+            label: 'How happy are you with the result?'
+            max: 5
+            icon: star
+            allow_half: true
+            show_value: true
+          recommend:
+            type: pro-slider
+            label: 'How likely are you to recommend us to a friend?'
+            min: 0
+            max: 10
+            step: 1
+            default: 8
+            suffix: ' / 10'
+            show_labels: false
+      tab_details:
+        type: pro-step
+        title: Details
+        description: 'What worked, and what we should do better.'
+        fields:
+          went_well:
+            type: checkboxes
+            label: 'What went well?'
+            options:
+              communication: Communication
+              design: Design
+              speed: 'Speed of delivery'
+              quality: 'Code quality'
+              support: 'Support after launch'
+          improve:
+            type: textarea
+            label: 'What should we improve?'
+            rows: 4
+      tab_you:
+        type: pro-step
+        title: 'About you'
+        description: 'All optional.'
+        fields:
+          quote_ok:
+            type: toggle
+            label: 'Can we quote you on our website?'
+            highlight: 1
+            default: 0
+            options:
+              1: 'Yes'
+              0: 'No'
+          quote_name:
+            type: text
+            label: 'Name to show with the quote'
+            placeholder: 'Maya, Harbour Coffee'
+            conditions:
+              - action: show
+                rules:
+                  - field: quote_ok
+                    operator: is
+                    value: '1'
+          email:
+            type: email
+            label: 'Email, if you would like a reply'
+            placeholder: you@example.com
+buttons:
+  - type: submit
+    value: 'Send feedback'
+process:
+  - message: 'Thank you for the feedback! This is a demo, so it was not stored anywhere.'
+  - reset: true</code></pre>
+</details>

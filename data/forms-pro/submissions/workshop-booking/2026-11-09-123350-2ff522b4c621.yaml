@@ -1,0 +1,32 @@
+data:
+  workshop: a11y
+  session_date: may14
+  ticket: '89'
+  seats: 1
+  total: 89.0
+  attendees:
+    -
+      attendee_name: 'Yuki Mori'
+      attendee_email: yuki@example.com
+      dietary: none
+  billing_name:
+    first: Yuki
+    last: Mori
+  billing_email: yuki@example.com
+  company: ''
+  billing_address:
+    street: '3-1 Marunouchi'
+    street2: ''
+    city: Tokyo
+    state: ''
+    zip: 100-0005
+    country: Japan
+files: {  }
+id: 2ff522b4c621
+form: workshop-booking
+created: 1794227630
+status: read
+starred: false
+notes: ''
+ip: null
+user_agent: null

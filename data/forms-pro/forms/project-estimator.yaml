@@ -1,0 +1,54 @@
+title: 'Website cost estimator'
+type: forms-pro
+mode: calculator
+show_title: true
+description: 'A ballpark price and timeline for a new site. Option keys hold the price per page.'
+fields:
+  pages:
+    type: number
+    label: 'Number of pages'
+    default: 8
+    validate:
+      min: 1
+      max: 200
+  tier:
+    type: radio
+    label: 'Design'
+    default: '750'
+    options:
+      '400': 'From a template ($400 a page)'
+      '750': 'Custom design ($750 a page)'
+      '1200': 'Custom with illustrations ($1,200 a page)'
+  ecommerce:
+    type: checkbox
+    label: 'Online shop (+$2,500)'
+  multilingual:
+    type: checkbox
+    label: 'Two or more languages (+$1,200)'
+  rush:
+    type: checkbox
+    label: 'Rush job, 25% faster (+20%)'
+  subtotal:
+    type: pro-calculation
+    label: Subtotal
+    formula: 'pages * tier + ecommerce * 2500 + multilingual * 1200'
+    prefix: '$'
+    decimals: 0
+  rush_fee:
+    type: pro-calculation
+    label: 'Rush fee'
+    formula: 'IF(rush, subtotal * 0.2, 0)'
+    prefix: '$'
+    decimals: 0
+  total:
+    type: pro-calculation
+    label: 'Estimated total'
+    formula: 'subtotal + rush_fee'
+    prefix: '$'
+    decimals: 0
+  weeks:
+    type: pro-calculation
+    label: 'Estimated timeline'
+    formula: 'CEIL((pages / 4 + 2 + ecommerce * 2 + multilingual) * IF(rush, 0.75, 1))'
+    suffix: ' weeks'
+    decimals: 0

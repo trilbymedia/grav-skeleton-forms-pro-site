@@ -1,0 +1,49 @@
+title: 'Body mass index'
+type: forms-pro
+mode: calculator
+show_title: true
+description: 'BMI from height and weight, with the healthy weight range for your height. A rough guide only.'
+fields:
+  bmi_row:
+    type: columns
+    fields:
+      bmi_height_col:
+        type: column
+        fields:
+          height_cm:
+            type: number
+            label: 'Height (cm)'
+            default: 175
+            validate:
+              min: 50
+              max: 250
+              step: any
+      bmi_weight_col:
+        type: column
+        fields:
+          weight_kg:
+            type: number
+            label: 'Weight (kg)'
+            default: 72
+            validate:
+              min: 10
+              max: 400
+              step: any
+  bmi:
+    type: pro-calculation
+    label: 'Your BMI'
+    formula: 'weight_kg / POW(height_cm / 100, 2)'
+    decimals: 1
+    formula_display: true
+  healthy_min:
+    type: pro-calculation
+    label: 'Healthy range starts at'
+    formula: '18.5 * POW(height_cm / 100, 2)'
+    suffix: ' kg'
+    decimals: 1
+  healthy_max:
+    type: pro-calculation
+    label: 'and ends at'
+    formula: '24.9 * POW(height_cm / 100, 2)'
+    suffix: ' kg'
+    decimals: 1

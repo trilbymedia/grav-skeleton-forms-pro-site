@@ -1,0 +1,67 @@
+title: 'Length and temperature'
+type: forms-pro
+mode: calculator
+show_title: true
+description: 'Every unit is an option whose key is its size in metres, so one formula converts any pair.'
+fields:
+  length:
+    type: number
+    label: Length
+    default: 26.2
+    validate:
+      step: any
+  unit_row:
+    type: columns
+    fields:
+      unit_from_col:
+        type: column
+        fields:
+          from_unit:
+            type: select
+            label: From
+            default: '1609.344'
+            options:
+              '0.01': Centimetres
+              '1': Metres
+              '1000': Kilometres
+              '0.0254': Inches
+              '0.3048': Feet
+              '1609.344': Miles
+      unit_to_col:
+        type: column
+        fields:
+          to_unit:
+            type: select
+            label: To
+            default: '1000'
+            options:
+              '0.01': Centimetres
+              '1': Metres
+              '1000': Kilometres
+              '0.0254': Inches
+              '0.3048': Feet
+              '1609.344': Miles
+  converted:
+    type: pro-calculation
+    label: Result
+    formula: 'length * from_unit / to_unit'
+    decimals: 3
+    formula_display: true
+  celsius:
+    type: number
+    label: 'Temperature (°C)'
+    default: 21
+    validate:
+      step: any
+  fahrenheit:
+    type: pro-calculation
+    label: Fahrenheit
+    formula: 'celsius * 9 / 5 + 32'
+    suffix: ' °F'
+    decimals: 1
+  kelvin:
+    type: pro-calculation
+    label: Kelvin
+    formula: 'celsius + 273.15'
+    suffix: ' K'
+    decimals: 2

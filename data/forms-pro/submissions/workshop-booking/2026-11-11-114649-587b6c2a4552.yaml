@@ -1,0 +1,32 @@
+data:
+  workshop: flatfile
+  session_date: apr09
+  ticket: '149'
+  seats: 1
+  total: 149.0
+  attendees:
+    -
+      attendee_name: 'Isabel Costa'
+      attendee_email: isabel@example.com
+      dietary: gluten_free
+  billing_name:
+    first: Isabel
+    last: Costa
+  billing_email: isabel@example.com
+  company: ''
+  billing_address:
+    street: 'Rua Augusta 45'
+    street2: ''
+    city: Lisbon
+    state: ''
+    zip: 1100-048
+    country: Portugal
+files: {  }
+id: 587b6c2a4552
+form: workshop-booking
+created: 1794397609
+status: read
+starred: false
+notes: ''
+ip: null
+user_agent: null

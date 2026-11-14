@@ -1,0 +1,49 @@
+title: 'Loan repayments'
+type: forms-pro
+mode: calculator
+show_title: true
+description: 'Monthly repayment for a fixed-rate loan or mortgage.'
+fields:
+  amount:
+    type: number
+    label: 'Loan amount ($)'
+    default: 250000
+    validate:
+      min: 0
+      step: any
+  rate:
+    type: number
+    label: 'Interest rate (% a year)'
+    default: 6.5
+    validate:
+      min: 0
+      step: any
+  years:
+    type: select
+    label: Term
+    default: '30'
+    options:
+      '5': '5 years'
+      '10': '10 years'
+      '15': '15 years'
+      '20': '20 years'
+      '25': '25 years'
+      '30': '30 years'
+  monthly:
+    type: pro-calculation
+    label: 'Monthly repayment'
+    formula: 'IF(rate == 0, amount / (years * 12), amount * (rate / 1200) / (1 - POW(1 + rate / 1200, -(years * 12))))'
+    prefix: '$'
+    decimals: 2
+  total_paid:
+    type: pro-calculation
+    label: 'Total repaid'
+    formula: 'monthly * years * 12'
+    prefix: '$'
+    decimals: 2
+  interest:
+    type: pro-calculation
+    label: 'Of which interest'
+    formula: 'total_paid - amount'
+    prefix: '$'
+    decimals: 2

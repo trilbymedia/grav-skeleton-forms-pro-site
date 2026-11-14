@@ -1,0 +1,17 @@
+data:
+  full_name:
+    first: Lukas
+    last: Becker
+  email: lukas.becker@example.com
+  department: support
+  project_ref: LP-2010
+  message: 'Our contact form emails are going to spam since we changed mail provider. Can you check the sending settings?'
+files: {  }
+id: 1f5cc7b4d042
+form: contact
+created: 1794473884
+status: read
+starred: false
+notes: ''
+ip: null
+user_agent: null

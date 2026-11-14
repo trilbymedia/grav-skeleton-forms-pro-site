@@ -1,0 +1,17 @@
+data:
+  full_name:
+    first: Chloé
+    last: Dubois
+  email: chloe.dubois@example.com
+  department: support
+  project_ref: LP-1990
+  message: 'Images uploaded from my phone appear rotated on the gallery page.'
+files: {  }
+id: e53c2b8233fa
+form: contact
+created: 1793899620
+status: read
+starred: false
+notes: ''
+ip: null
+user_agent: null

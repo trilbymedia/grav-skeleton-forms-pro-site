@@ -1,0 +1,45 @@
+git:
+    form:
+        url: https://github.com/getgrav/grav-plugin-form
+        path: user/plugins/form
+        branch: master
+    email:
+        url: https://github.com/getgrav/grav-plugin-email
+        path: user/plugins/email
+        branch: master
+    login:
+        url: https://github.com/getgrav/grav-plugin-login
+        path: user/plugins/login
+        branch: master
+    api:
+        url: https://github.com/getgrav/grav-plugin-api
+        path: user/plugins/api
+        branch: main
+    admin2:
+        url: https://github.com/getgrav/grav-plugin-admin2
+        path: user/plugins/admin2
+        branch: main
+    flex-objects:
+        url: https://github.com/trilbymedia/grav-plugin-flex-objects
+        path: user/plugins/flex-objects
+        branch: master
+    shortcode-core:
+        url: https://github.com/getgrav/grav-plugin-shortcode-core
+        path: user/plugins/shortcode-core
+        branch: master
+    error:
+        url: https://github.com/getgrav/grav-plugin-error
+        path: user/plugins/error
+        branch: master
+    problems:
+        url: https://github.com/getgrav/grav-plugin-problems
+        path: user/plugins/problems
+        branch: master
+    github-markdown-alerts:
+        url: https://github.com/trilbymedia/grav-plugin-github-markdown-alerts
+        path: user/plugins/github-markdown-alerts
+        branch: main
+    quark2:
+        url: https://github.com/getgrav/grav-theme-quark2
+        path: user/themes/quark2
+        branch: main

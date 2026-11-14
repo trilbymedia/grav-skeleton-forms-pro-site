@@ -1,0 +1,5 @@
+enabled: true
+# The demo never sends mail: no form on this site has a notification or email
+# action, and the engine is off as a second guard.
+mailer:
+  engine: none

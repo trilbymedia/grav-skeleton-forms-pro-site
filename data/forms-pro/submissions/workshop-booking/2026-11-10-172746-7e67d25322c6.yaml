@@ -1,0 +1,40 @@
+data:
+  workshop: forms
+  session_date: mar12
+  ticket: '149'
+  seats: 3
+  total: 447.0
+  attendees:
+    -
+      attendee_name: 'Ethan Clarke'
+      attendee_email: ethan@example.com
+      dietary: none
+    -
+      attendee_name: 'Mia Svensson'
+      attendee_email: mia@example.com
+      dietary: vegan
+    -
+      attendee_name: 'Leo Grant'
+      attendee_email: leo@example.com
+      dietary: none
+  billing_name:
+    first: Ethan
+    last: Clarke
+  billing_email: ap@clarke-co.example.com
+  company: 'Clarke & Co'
+  billing_address:
+    street: '41 Queen Street'
+    street2: ''
+    city: Edinburgh
+    state: ''
+    zip: 'EH2 3NH'
+    country: 'United Kingdom'
+files: {  }
+id: 7e67d25322c6
+form: workshop-booking
+created: 1794331666
+status: read
+starred: true
+notes: 'Asked for an invoice with a PO number: PO-88412.'
+ip: null
+user_agent: null

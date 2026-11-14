@@ -1,0 +1,22 @@
+data:
+  overall: 5
+  recommend: 10
+  went_well:
+    - communication
+    - design
+    - speed
+    - quality
+    - support
+  improve: 'Keep doing what you are doing.'
+  quote_ok: '1'
+  quote_name: 'Sofia, Marino Wines'
+  email: ''
+files: {  }
+id: bb33c7a6fb22
+form: project-feedback
+created: 1793504297
+status: read
+starred: true
+notes: ''
+ip: null
+user_agent: null

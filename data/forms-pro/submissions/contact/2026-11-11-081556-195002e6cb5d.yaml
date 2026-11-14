@@ -1,0 +1,16 @@
+data:
+  full_name:
+    first: Kwame
+    last: Asante
+  email: kwame@asante-studio.example.com
+  department: projects
+  message: 'We need an online shop for handmade furniture, about 60 products to start. Can you also help with photography?'
+files: {  }
+id: 195002e6cb5d
+form: contact
+created: 1794384956
+status: new
+starred: false
+notes: ''
+ip: null
+user_agent: null

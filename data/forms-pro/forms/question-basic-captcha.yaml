@@ -1,0 +1,32 @@
+title: 'Ask a quick question'
+type: forms-pro
+inline_errors: true
+fields:
+  honeypot:
+    type: honeypot
+  email:
+    type: email
+    label: 'Your email'
+    placeholder: you@example.com
+    validate:
+      required: true
+  question:
+    type: textarea
+    label: 'Your question'
+    rows: 3
+    validate:
+      required: true
+  challenge:
+    type: basic-captcha
+    label: 'Solve the sum'
+    placeholder: 'Answer'
+    captcha_type: math
+    validate:
+      required: true
+buttons:
+  - type: submit
+    value: 'Ask away'
+process:
+  - basic-captcha: true
+  - message: 'Correct answer, thanks! This is a demo, so your question was not stored.'
+  - reset: true

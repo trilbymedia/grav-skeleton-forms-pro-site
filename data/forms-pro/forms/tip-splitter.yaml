@@ -1,0 +1,46 @@
+title: 'Tip and split'
+type: forms-pro
+mode: calculator
+show_title: true
+description: 'Work out the tip and what everyone owes.'
+fields:
+  bill:
+    type: number
+    label: 'Bill ($)'
+    default: 84.5
+    validate:
+      min: 0
+      step: 0.01
+  tip:
+    type: pro-slider
+    label: Tip
+    min: 0
+    max: 30
+    step: 1
+    default: 18
+    suffix: '%'
+  people:
+    type: number
+    label: 'Splitting between'
+    default: 3
+    validate:
+      min: 1
+      max: 50
+  tip_amount:
+    type: pro-calculation
+    label: 'Tip amount'
+    formula: 'bill * tip / 100'
+    prefix: '$'
+    decimals: 2
+  bill_total:
+    type: pro-calculation
+    label: 'Total with tip'
+    formula: 'bill + tip_amount'
+    prefix: '$'
+    decimals: 2
+  per_person:
+    type: pro-calculation
+    label: 'Each person pays'
+    formula: 'IF(people < 1, 0, bill_total / people)'
+    prefix: '$'
+    decimals: 2

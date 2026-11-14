@@ -1,0 +1,15 @@
+enabled: true
+built_in_css: true
+storage:
+  path: 'user://data/forms-pro'
+  forms_folder: forms
+  submissions_folder: submissions
+submissions:
+  store_ip: false
+  store_user_agent: false
+shortcode:
+  enabled: true
+webhooks:
+  timeout: 10
+  allow_private_hosts: false
+expose_call_action: false

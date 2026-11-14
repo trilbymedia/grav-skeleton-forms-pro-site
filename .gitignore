@@ -1,0 +1,32 @@
+# Accounts - none ship. The hosted demo keeps its read-only demo account on the server.
+accounts/*
+!accounts/.gitkeep
+!accounts/.htaccess
+
+# Data - only the Forms Pro forms and the fictional seed entries ship
+data/*
+!data/.gitkeep
+!data/.htaccess
+!data/forms-pro/
+
+# Plugins and themes - installed via .dependencies and GPM
+plugins/*
+!plugins/.gitkeep
+themes/*
+!themes/.gitkeep
+
+# Per-site secrets and runtime files
+/config/security-private.php
+/config/plugins/*-private.php
+/config/versions.yaml
+
+# Server notes for the hosted demo
+/DEMO-NOTES.md
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo

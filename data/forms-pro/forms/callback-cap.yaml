@@ -1,0 +1,30 @@
+title: 'Request a call back'
+type: forms-pro
+inline_errors: true
+fields:
+  honeypot:
+    type: honeypot
+  first_name:
+    type: text
+    label: 'First name'
+    validate:
+      required: true
+  phone:
+    type: pro-phone
+    label: 'Phone number'
+    show_country_code: true
+    default_country: US
+    placeholder: '555 010 4477'
+    validate:
+      required: true
+  cap:
+    type: cap
+    label: 'Checking you are human'
+    mode: checkbox
+buttons:
+  - type: submit
+    value: 'Call me back'
+process:
+  - cap: true
+  - message: 'Thanks, {{ form.value.first_name }}! Your browser solved the proof of work. This is a demo, so nobody will call.'
+  - reset: true
